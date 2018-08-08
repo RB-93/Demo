@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splash_rl"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_bg" />
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/card_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        app:cardBackgroundColor="#BDEA00"
+        app:cardCornerRadius="10dp" >
+
+        <ImageView
+            android:id="@+id/card_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="140dp"
+            android:padding="8dp"
+            android:src="@drawable/barbarian"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/game_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="160dp"
+            android:text="Clan Wars"
+            android:textSize="24sp"
+            android:fontFamily="@font/coc_font"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="450dp"
+            android:background="#a1c100" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" >
+
+            <Button
+                android:id="@+id/rule_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:stateListAnimator="@null"
+                android:elevation="10dp"
+                android:text="Rules"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:drawableStart="@drawable/rule_btn_img"
+                android:background="@drawable/rule_btn_shp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/play_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:stateListAnimator="@null"
+                android:elevation="10dp"
+                android:text="Play"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:drawableStart="@drawable/play_btn_img"
+                android:background="@drawable/rule_btn_shp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

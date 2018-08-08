@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rulecard_rl"
+    android:background="@drawable/splash_bg">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back_buttonstyle"
+        android:fontFamily="@font/roboto"
+        android:padding="4dp"
+        android:text="BACK TO MAIN"
+        android:textColor="#651FFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/card_rules"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        android:stateListAnimator="@animator/card_animation"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="#651FFF"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="8dp" >
+
+
+        <ImageView
+            android:id="@+id/rules_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/barbarian"
+            android:src="@drawable/rules"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true" />
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
